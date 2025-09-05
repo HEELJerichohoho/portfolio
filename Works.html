@@ -1,54 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Works</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+ <nav>
+    <div class="nav__content">
+      <div class="logo">
+        <a href="#">Jericho</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Aboutme.html">About</a></li>
+        <li><a href="Skills.html" >Skills</a></li>
+        <li><a href="Works.html">Works</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<section>
-  <h2 style="text-align: center;">My Works & Projects</h2>
-  <hr>
-  <p>
-    Here you can find some of the projects I’ve worked on. This section will grow as I continue 
-    to learn, explore, and build more applications in the future. Each project has a screenshot, 
-    a short description, and sometimes even a demo video.
-  </p>
 
-  <!-- Project 1 -->
-  <div style="text-align: center; margin: 20px 0;">
-    <h3>Project Title Placeholder</h3>
-    <img src="assets/img/project-placeholder.png" alt="Project Screenshot" width="400" height="250">
-    <p style="max-width: 600px; margin: 10px auto;">
-      This is a short description of my first project. It explains what the project is about, 
-      what technologies I used, and what I learned while working on it.
+  <section class="section">
+    <div class="section__container">
+      <div class="content">
+        <h2 class="subtitle">My Works & <span>Projects</span></h2>
+        <p class="description">
+          Here you can find some of the projects I’ve worked on. This section will grow as I continue 
+          to learn, explore, and build more applications in the future.
+        </p>
+
+        <!-- Project 1 -->
+        <div class="project">
+          <h3 class="project-title">Safepal: School Security with Wearable GPS Tracking and Emergency Alerts</h3>
+          
+          <div class="media-container">
+            <!-- Image block -->
+            <div class="media-item">
+              <img src="assets/img/safepal.jpg" alt="Safepal Project Screenshot">
+              <p class="caption">Screenshot of the Safepal system</p>
+            </div>
+
+            <!-- Video block -->
+            <div class="media-item">
+              <video controls>
+                <source src="assets/video/System Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p class="caption">Demo video of Safepal in action</p>
+            </div>
+          </div>
+
+          <p class="description">
+            The Safepal project is a school security system that integrates a wearable device with GPS 
+            tracking and an emergency alert function to ensure student safety. The device allows parents 
+            and school staff to monitor students’ real-time location through an Android application, 
+            while an emergency button provides instant notifications during critical situations. Developed 
+            using Agile Scrum methodology, Safepal emphasizes usability, reliability, and security, 
+            offering a practical technological solution to enhance safety measures within and beyond school premises.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  
+    <p>
+      <a href="index.html" class="portfolio">⬅ Back to Home</a> |
+      <a href="mailto:your.nanalesjeck12@gmail.com">Email</a> |
+      <a href="https://www.facebook.com/jerichohoho" target="_blank">Facebook</a> |
+      <a href="https://www.linkedin.com/in/jericho-balleta-nanales-5759a326b/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/HEELJerichohoho" target="_blank">GitHub</a> |
     </p>
-    <video width="400" height="250" controls>
-      <source src="assets/video/project-placeholder.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <hr>
-
-  <!-- Project 2 -->
-  <div style="text-align: center; margin: 20px 0;">
-    <h3>Another Project Placeholder</h3>
-    <img src="assets/img/project2-placeholder.png" alt="Another Project Screenshot" width="400" height="250">
-    <p style="max-width: 600px; margin: 10px auto;">
-      This is another project placeholder. You can add different images, descriptions, 
-      and even GitHub/demo links here.
-    </p>
-    <video width="400" height="250" controls>
-      <source src="assets/video/project2-placeholder.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <hr>
-  <br>
-</section>
-
-<a href="index.html" target="_blank">Go Back</a>
+ 
+    <p>&copy; 2025 Jericho Nanales </p>
+  </footer>
 
 </body>
 </html>

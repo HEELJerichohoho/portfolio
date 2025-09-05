@@ -1,66 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Jericho</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav__content">
+      <div class="logo">
+        <a href="index.html">Jericho</a>
+      </div>
+      
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Aboutme.html"class="active">About</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Works.html">Works</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="section">
+    <div class="section__container">
+      <div class="content">
+        <p class="subtitle">Get to Know Me</p>
+        <h1 class="title">Who is <span>Jericho?</span></h1>
+        <p class="description">
+          I’m an IT graduate passionate about building software, exploring hardware,
+          and solving problems through technology. I strive to keep improving and 
+          pushing boundaries in the tech world while staying curious and creative.
+        </p>
+      </div>
+      <div class="image">
+        <img src="assets/img/Profile.jpg" alt="Jericho">
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+   <div class="section__container single-column">
+      <div class="content">
+        <h2>🎓 Education</h2>
+        <p>
+          I am a proud graduate of <b>Pateros Technological College</b> with strong foundations
+          in desktop application programming using Java, as well as web development using HTML,
+          CSS, JavaScript, and PHP. My background also includes computer hardware, troubleshooting,
+          and networking. I hold certifications such as CSS NCII TESDA and Microsoft Digital Literacy.
+        </p>
+        <div class="image-link">
+          <img src="assets/img/ptc.png" alt="Pateros Technological College">
+          <a href="https://paterostechnologicalcollege.edu.ph/" target="_blank">
+            Visit Pateros Technological College
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship -->
+  <section class="section">
+    <div class="section__container single-column">
+      <div class="content">
+        <h2>💼 Internship</h2>
+        <p>
+          From March to August 2025, I joined the 
+          <b>Philippine Army Finance Center Producers Integrated Cooperative</b> (PAFCPIC)
+          as an intern, where I applied my skills in networking and system support.
+          This hands-on experience gave me the chance to work in real-world IT environments
+          and taught me how to thrive in professional settings.
+        </p>
+        <div class="image-link">
+          <img src="assets/img/Papsi.png" alt="PAFCPIC">
+          <a href="https://pafcpic.ph/" target="_blank">Visit PAFCPIC</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies & Interests -->
+  <section class="section">
+   <div class="section__container single-column">
+      <div class="content">
+        <h2>🎮 Hobbies & Interests</h2>
+        <p>
+          Beyond technology, I’m a passionate gamer who has been playing since childhood.
+          Some of my favorites include the <b>GTA series</b>, <b>Horizon Zero Dawn</b>, and
+          <b>Red Dead Redemption 2</b>.  
+          I also enjoy reading and writing — from poetry to novels. Among my favorite books are
+          <i>Angels and Demons</i> by Dan Brown and <i>Miss Peregrine’s Map of Days</i>.
+        </p>
+        <div class="gallery">
+          <img src="assets/img/red.jpg" alt="Red Dead Redemption 2">
+          <img src="assets/img/gta.jpg" alt="GTA Series">
+          <img src="assets/img/hori.jpg" alt="Horizon Zero Dawn">
+          <img src="assets/img/ad.jpg" alt="Angels and Demons">
+          <img src="assets/img/mod.jpg" alt="Map of Days">
+          <img src="assets/img/sbr.jpg" alt="Steel Ball Run">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
   
-
-<section>
-   <h2 style="text-align: center;">Know more about me</h2>
-  <hr>
-  <h3>Education</h3>
-  <p>
-    Who's Jericho? I am an IT graduate from <b>Pateros Technological College</b> with knowledge in desktop application 
-    programming using Java and web application programming with HTML, CSS, 
-    JavaScript, and PHP. I am also adept in computer hardware, troubleshooting, 
-    and networking, with certifications in CSS NCII TESDA and Microsoft Digital 
-    Literacy. While I continue to learn and grow in these fields, my fascination 
-    with technology drives me to keep improving and exploring new possibilities.
-  </p>
-
-  
-  <div style="text-align: center; margin: 20px 0;">
-    <img src="assets/img/ptc.png" alt="Pateros Technological College" width="265" height="200">
-    <br>
-    <a href="https://paterostechnologicalcollege.edu.ph/" target="_blank">Pateros Technological College</a>
-  </div>
-<hr>
-
-<h3>Internship</h3>
-  <p>
-    I took my internship from March to August 2025 at <b>Philippine Army Finance Center Producers Integrated Cooperative </b>, where I applied my technical skills in both
-    networking and system support while gaining hands-on experience in real-world IT environments.
-  </p>
-
-  <div style="text-align: center; margin: 20px 0;">
-    <img src="assets/img/Papsi.png" alt="PAFCPIC" width="265" height="200">
-    <br>
-    <a href="https://pafcpic.ph/" target="_blank"> PAFCPIC </a>
-  </div>
-  <hr>
-
-  <h3>Hobbies & Interests</h3>
-
-  <p>
-    Outside of work and programming, I consider myself an avid gamer because I started to play video games since I was a child and 
-    I have spent a ginormous amount of money on gaming. Horizon Zero Dawn, GTA series, and Red Dead Redemption 2 are my favorite games of all time.
-    I also write poetry sometimes and I read a lot of books, with "Angels and Demons" by Dan Brown being my favorite book.
-  </p>
-  
-  <img src="assets/img/red.jpg" alt="Red Dead Redemption 2" width="265" height="200">
-  <img src="assets/img/gta.jpg" alt="GTA Series" width="260" height="200">
-  <img src="assets/img/hori.jpg" alt="Horizon Zero Dawn" width="260" height="200">
-  <img src="assets/img/ad.jpg" alt="Angels and Demons Book" width="260" height="200">
-  <img src="assets/img/mod.jpg" alt="Map of Days Book" width="265" height="200">
-  <img src="assets/img/sbr.jpg" alt="Steel Ball Run" width="265" height="200">
-
-  <hr>
-  <br>
-</section>
-
-<a href="index.html">Go Back</a>
-
+    <p>
+      <a href="index.html" class="portfolio">⬅ Back to Home</a> |
+      <a href="mailto:your.nanalesjeck12@gmail.com">Email</a> |
+      <a href="https://www.facebook.com/jerichohoho" target="_blank">Facebook</a> |
+      <a href="https://www.linkedin.com/in/jericho-balleta-nanales-5759a326b/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/HEELJerichohoho" target="_blank">GitHub</a> |
+    </p>
+ 
+    <p>&copy; 2025 Jericho Nanales </p>
+  </footer>
 </body>
 </html>
