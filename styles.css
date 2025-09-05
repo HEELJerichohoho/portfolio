@@ -1,15 +1,14 @@
 :root {
-  --primary-color: #000000;        /* Penguin black */
-  --primary-color-dark: #1c1c1c;   /* Darker black */
-  --secondary-color: #ff9f1c;      /* Beak/feet orange */
-  --text-dark: #111827;            /* Strong dark gray */
-  --text-light: #4b5563;           /* Softer gray */
-  --extra-light: #f8f9fa;          /* Snow white */
+  --primary-color: #000000;        
+  --primary-color-dark: #1c1c1c;   
+  --secondary-color: #ff9f1c;      
+  --text-dark: #111827;            
+  --text-light: #4b5563;           
+  --extra-light: #f8f9fa;          
   --card-bg: #ffffff;
   --max-width: 1200px;
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +26,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+
 nav {
   width: 100%;
   position: fixed;
@@ -79,7 +78,7 @@ ul li a:hover {
   color: var(--secondary-color);
 }
 
-/* Section */
+
 .section {
   padding: 6rem 1rem 3rem;
 }
@@ -92,7 +91,7 @@ ul li a:hover {
   gap: 2rem;
 }
 
-/* Hero (2-column) */
+
 .section__container.hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -125,7 +124,7 @@ ul li a:hover {
   margin-bottom: 2rem;
 }
 
-/* Image */
+
 .image {
   display: flex;
   justify-content: center;
@@ -141,7 +140,7 @@ ul li a:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,0.25);
 }
 
-/* Content Sections (Education, Internship, etc.) */
+
 .content {
   background: var(--card-bg);
   padding: 2rem;
@@ -175,7 +174,7 @@ ul li a:hover {
   color: var(--primary-color);
 }
 
-/* Gallery */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -196,7 +195,7 @@ ul li a:hover {
   transform: scale(1.05);
 }
 
-/* Footer */
+
 .footer {
   background: var(--primary-color);
   color: var(--extra-light);
@@ -213,7 +212,6 @@ ul li a:hover {
   color: var(--extra-light);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .title {
     font-size: 2rem;
@@ -226,7 +224,7 @@ ul li a:hover {
   }
 }
 
-/* General section style (consistent across all pages) */
+
 .content-section {
   max-width: 900px;
   margin: auto;
@@ -236,13 +234,13 @@ ul li a:hover {
 
 .content-section h2 {
   font-size: 2rem;
-  color: #1e3a8a; /* Penguin dark blue */
+  color: #1e3a8a; 
   margin-bottom: 0.5rem;
 }
 
 .content-section hr {
   width: 60px;
-  border: 2px solid #ffcc00; /* Penguin yellow */
+  border: 2px solid #ffcc00; 
   margin: 1rem auto 2rem;
 }
 
@@ -253,8 +251,8 @@ ul li a:hover {
   line-height: 1.6;
 }
 
-/* Skills list like Aboutme sections */
-/* Skills List */
+
+
 .skills__list {
   display: flex;
   flex-direction: column;
@@ -299,7 +297,7 @@ ul li a:hover {
   font-weight: bold;
 }
 
-/* Gallery */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -335,12 +333,10 @@ ul li a:hover {
 }
 
 
-
-/* Buttons (same style as Aboutme/index) */
 .btn {
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  background: #1e3a8a;
+  background: #111827;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -348,11 +344,11 @@ ul li a:hover {
 }
 
 .btn:hover {
-  background: #111827;
+  background: #ff9f1c;
 }
 
 
-/* Works Page */
+
 .video {
   width: 100%;
   max-width: 800px;
@@ -364,10 +360,10 @@ ul li a:hover {
 
 .media-item img,
 .media-item video,
-.media-item iframe {  /* 👈 added iframe here */
+.media-item iframe {  
    width: 100%;
   max-width: 500px;
-  height: 300px; /* 👈 fixed height so both match */
+  height: 300px; 
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -424,7 +420,7 @@ ul li a:hover {
   color: #555;
 }
 
-/* On desktop: put image & video side by side */
+
 @media (min-width: 768px) {
   .media-container {
     flex-direction: row;
@@ -433,7 +429,7 @@ ul li a:hover {
 }
 
 .subtitle span {
-  color: var(--secondary-color); /* penguin gold/yellow accent */
+  color: var(--secondary-color); 
 }
 
 .contact__info {
@@ -452,3 +448,73 @@ ul li a:hover {
   color: var(--primary-color-dark);
 }
 
+@media (max-width: 480px) {
+  .image img {
+    width: 80%;
+    max-width: 240px;
+    height: auto;
+  }
+
+  
+  .section__container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+ 
+  .media-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  
+  .media-item img,
+  .media-item video,
+  .media-item iframe {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+
+ 
+  .section {
+    padding: 4rem 0.5rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .gallery img {
+    max-height: 120px;
+  }
+
+  nav .nav__content {
+    padding: 0.5rem 1rem;
+  }
+
+  
+  ul li a {
+    padding: 0.6rem 0;
+  }
+}
