@@ -9,6 +9,11 @@
   --max-width: 1200px;
 }
 
+body {
+  background: red !important;
+}
+
+
 * {
   margin: 0;
   padding: 0;
